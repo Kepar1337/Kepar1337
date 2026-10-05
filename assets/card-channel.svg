@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-label="Доступна англійська — English for Ukrainians, 2–3 posts a day">
+  <title>Доступна англійська</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0a16"/><stop offset="1" stop-color="#171028"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <clipPath id="clip"><rect width="600" height="300" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .in { }
+    @keyframes slide { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform:none; } }
+
+    .p1 { animation: lift 5s ease-in-out infinite; }
+    @keyframes lift { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    .d1, .d2, .d3 { fill: #3a2f63; animation: tick 4.5s steps(1) infinite; }
+    .d2 { animation-delay: 1.5s; } .d3 { animation-delay: 3s; }
+    @keyframes tick { 0% { fill: #b9a6ff; } 33%,100% { fill: #3a2f63; } }
+</style>
+  <g clip-path="url(#clip)">
+    <rect width="600" height="300" fill="url(#bg)"/>
+    <rect width="600" height="300" fill="url(#grid)"/>
+    
+    <g transform="translate(404 104)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+      <g class="p3"><rect x="24" y="0" width="150" height="58" rx="12" fill="#1f1838" stroke="#2c2347"/></g>
+      <g class="p2"><rect x="12" y="14" width="160" height="66" rx="12" fill="#251d42" stroke="#2c2347"/></g>
+      <g class="p1"><rect x="0" y="30" width="176" height="96" rx="12" fill="#2d2450" stroke="#46397a"/>
+        <text x="14" y="56" font-size="14" font-weight="700" fill="#b9a6ff">5 слів дня</text>
+        <text x="14" y="80" font-size="14" fill="#f4f1ff">resilient — стійкий</text>
+        <text x="14" y="102" font-size="14" fill="#c4bce4">brave — сміливий</text></g>
+      <g font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="12" fill="#a79fc6">
+        <circle cx="18" cy="150" r="5" class="d1"/><text x="28" y="154">08:00</text>
+        <circle cx="80" cy="150" r="5" class="d2"/><text x="90" y="154">13:00</text>
+        <circle cx="142" cy="150" r="5" class="d3"/><text x="152" y="154">19:00</text>
+      </g>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="599" height="299" rx="18" fill="none" stroke="#2c2347"/>
+  <g class="in" style="animation-delay:.1s">
+    <text x="32" y="44" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="13" letter-spacing="2" fill="#b9a6ff">TELEGRAM CHANNEL · CONTENT</text>
+    
+    <text x="32" y="90" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#f4f1ff">Доступна англійська</text>
+    <text x="32" y="116" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16" fill="#a79fc6">English for Ukrainians, 2–3 posts a day</text>
+  </g>
+  <g class="in" style="animation-delay:.3s">
+    <text x="32" y="150" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">Words, phrases &amp; grammar drills.</text>
+    <text x="32" y="176" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">Drafted by my own AI content agent,</text>
+    <text x="32" y="202" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">approved by a human before posting.</text>
+  </g>
+  <g class="in" style="animation-delay:.5s">
+    <rect x="32" y="244" width="92" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="78.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">Telethon</text><rect x="132" y="244" width="75" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="169.5" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">Claude</text><rect x="215" y="244" width="110" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="270.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">Automation</text>
+  </g>
+</svg>

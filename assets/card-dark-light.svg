@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-label="Dark-Light — One-click light/dark theme switcher">
+  <title>Dark-Light</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0a16"/><stop offset="1" stop-color="#171028"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <clipPath id="clip"><rect width="600" height="300" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .in { }
+    @keyframes slide { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform:none; } }
+
+    .panel { animation: panel 6s ease-in-out infinite; }
+    @keyframes panel { 0%,40% { fill:#f3efe6; } 50%,90% { fill:#1b1530; } 100% { fill:#f3efe6; } }
+    .track { animation: track 6s ease-in-out infinite; }
+    @keyframes track { 0%,40% { fill:#ffcf6b; } 50%,90% { fill:#6c56c9; } 100% { fill:#ffcf6b; } }
+    .knob { animation: knob 6s ease-in-out infinite; }
+    @keyframes knob { 0%,40% { transform: translateX(0); } 50%,90% { transform: translateX(44px); } 100% { transform: translateX(0); } }
+    .sun { transform-box: fill-box; transform-origin: center; animation: sun 6s ease-in-out infinite; }
+    @keyframes sun { 0%,40% { opacity:1; transform: rotate(0); } 50%,90% { opacity:.12; transform: rotate(90deg); } 100% { opacity:1; } }
+    .moon { animation: moon 6s ease-in-out infinite; }
+    @keyframes moon { 0%,40% { opacity:.15; } 50%,90% { opacity:1; } 100% { opacity:.15; } }
+</style>
+  <g clip-path="url(#clip)">
+    <rect width="600" height="300" fill="url(#bg)"/>
+    <rect width="600" height="300" fill="url(#grid)"/>
+    
+    <g transform="translate(420 70)">
+      <rect class="panel" x="0" y="0" width="150" height="96" rx="14"/>
+      <g class="sun"><circle cx="40" cy="40" r="14" fill="#ffb938"/>
+        <g stroke="#ffb938" stroke-width="3" stroke-linecap="round">
+          <path d="M40 16v-6M40 70v-6M16 40h-6M70 40h-6M23 23l-4-4M61 61l-4-4M23 57l-4 4M61 19l-4 4"/></g></g>
+      <g class="moon"><path d="M118 26a18 18 0 1 0 14 28 15 15 0 1 1 -14 -28z" fill="#d9ceff"/>
+        <circle cx="96" cy="22" r="1.6" fill="#fff"/><circle cx="88" cy="50" r="1.2" fill="#fff"/></g>
+      <rect x="35" y="112" width="80" height="34" rx="17" class="track"/>
+      <circle class="knob" cx="53" cy="129" r="13" fill="#fff"/>
+      <text x="75" y="172" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="12" fill="#a79fc6">Ctrl+Alt+D</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="599" height="299" rx="18" fill="none" stroke="#2c2347"/>
+  <g class="in" style="animation-delay:.1s">
+    <text x="32" y="44" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="13" letter-spacing="2" fill="#b9a6ff">OPEN SOURCE · WINDOWS</text>
+    <rect x="494" y="24" width="82" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#2c2347"/><circle cx="507" cy="36" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle><text x="517" y="40.5" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="12.5" fill="#a79fc6">released</text>
+    <text x="32" y="90" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#f4f1ff">Dark-Light</text>
+    <text x="32" y="116" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16" fill="#a79fc6">One-click light/dark theme switcher</text>
+  </g>
+  <g class="in" style="animation-delay:.3s">
+    <text x="32" y="150" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">Tray toggle, schedule, floating widget,</text>
+    <text x="32" y="176" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">global hotkey. No admin rights,</text>
+    <text x="32" y="202" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">no network, ~26 MB RAM.</text>
+  </g>
+  <g class="in" style="animation-delay:.5s">
+    <rect x="32" y="244" width="41" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="52.5" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">C#</text><rect x="81" y="244" width="84" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="123.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">.NET 10</text><rect x="173" y="244" width="49" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="197.5" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">WPF</text><rect x="230" y="244" width="84" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="272.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">GPL-3.0</text>
+  </g>
+</svg>

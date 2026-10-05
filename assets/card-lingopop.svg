@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-label="LingoPop — Learn English inside Telegram">
+  <title>LingoPop</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0a16"/><stop offset="1" stop-color="#171028"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <clipPath id="clip"><rect width="600" height="300" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .in { }
+    @keyframes slide { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform:none; } }
+
+    .b1, .b2, .b3 { opacity: 0; animation: chat 6s ease-out infinite; }
+    .b2 { animation-delay: .9s; } .b3 { animation-delay: 1.8s; }
+    @keyframes chat { 0% { opacity:0; transform: translateY(10px); } 10%,80% { opacity:1; transform:none; } 92%,100% { opacity:0; } }
+</style>
+  <g clip-path="url(#clip)">
+    <rect width="600" height="300" fill="url(#bg)"/>
+    <rect width="600" height="300" fill="url(#grid)"/>
+    
+    <g transform="translate(400 62)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+      <g class="b1"><rect x="0" y="0" width="150" height="44" rx="16" fill="#2a2148"/>
+        <text x="18" y="28" font-size="17" fill="#f4f1ff">How are you?</text></g>
+      <g class="b2"><rect x="24" y="56" width="150" height="44" rx="16" fill="#6c56c9"/>
+        <text x="42" y="84" font-size="17" fill="#fff">Як справи? ✓</text></g>
+      <g class="b3"><rect x="24" y="114" width="156" height="34" rx="17" fill="#4ade80" fill-opacity=".14" stroke="#4ade80" stroke-opacity=".5"/>
+        <text x="102" y="136" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#4ade80">+1 word learned</text></g>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="599" height="299" rx="18" fill="none" stroke="#2c2347"/>
+  <g class="in" style="animation-delay:.1s">
+    <text x="32" y="44" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="13" letter-spacing="2" fill="#b9a6ff">TELEGRAM MINI APP · EDTECH</text>
+    <rect x="494" y="24" width="82" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#2c2347"/><circle cx="507" cy="36" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle><text x="517" y="40.5" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="12.5" fill="#a79fc6">building</text>
+    <text x="32" y="90" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-.5" fill="#f4f1ff">LingoPop</text>
+    <text x="32" y="116" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16" fill="#a79fc6">Learn English inside Telegram</text>
+  </g>
+  <g class="in" style="animation-delay:.3s">
+    <text x="32" y="150" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">Bite-sized English practice for</text>
+    <text x="32" y="176" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">Ukrainian speakers — right where</text>
+    <text x="32" y="202" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" fill="#c4bce4">they already spend their day.</text>
+  </g>
+  <g class="in" style="animation-delay:.5s">
+    <rect x="32" y="244" width="92" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="78.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">Telegram</text><rect x="132" y="244" width="92" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="178.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">Mini App</text><rect x="232" y="244" width="110" height="28" rx="14" fill="#b9a6ff" fill-opacity="0.12" stroke="#b9a6ff" stroke-opacity="0.35"/><text x="287.0" y="263" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, 'Courier New', monospace" font-size="14" fill="#b9a6ff">TypeScript</text>
+  </g>
+</svg>
